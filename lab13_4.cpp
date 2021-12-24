@@ -2,6 +2,10 @@
 
 using namespace std;
 
+template<class a>
+a mySwap(a &,a &);
+
+
 int main(){
 	int x, y;
 	string a, b;
@@ -29,4 +33,17 @@ int main(){
 
 	return 0;
 }
+
+
+
+
+template<class a>
+a mySwap(a &x,a &y){
+ a sx;
+ sx=x;
+ x=y;
+ y=sx;
+ return sx;
+}
+ 
 
